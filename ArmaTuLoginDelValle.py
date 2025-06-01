@@ -28,7 +28,8 @@ def mostrar_datos():
     # Muestro los usuarios y sus contraseñas y la cantidad de usuarios registrados
     for usuario, password in Usuarios.items():
         print(f"\nUsuario: {usuario}, Contraseña: {password}")
-    print("\n-" * 30)
+    print()
+    print("-" * 30)
     print(f"Total de usuarios registrados: {len(Usuarios)}")
     print("-" * 30)
 
