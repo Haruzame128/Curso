@@ -1,3 +1,4 @@
+#Variable global donde se guardaran los usuarios con sus contraseñas
 Usuarios = {}
 
 def registrar_usuario(nombre, password):
