@@ -73,4 +73,10 @@ def main():
         else:
             print("Opción inválida, intente nuevamente.")
 
-main()
+
+
+#Ejecuto la funcion principal
+try:
+    main()
+except Exception as e:
+    print(f"\nHa ocurrido un error inesperado: {e}")
