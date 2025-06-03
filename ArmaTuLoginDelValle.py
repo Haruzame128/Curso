@@ -28,7 +28,7 @@ def mostrar_datos():
     print("\nUsuarios registrados:")
     # Muestro los usuarios y sus contraseñas y la cantidad de usuarios registrados
     for usuario, password in Usuarios.items():
-        print(f"\nUsuario: {usuario}, Contraseña: {password}")
+        print(f"\nUsuario: {usuario}, Contraseña: {'*' * len(password)}")
     print()
     print("-" * 30)
     print(f"Total de usuarios registrados: {len(Usuarios)}")
@@ -47,8 +47,13 @@ def main():
         if opcion == '1':
             # Capturo el nombre y la contraseña del usuario y lo convierto 
             # a minusculas para evitar problema de case-sensitivity
-            nombre = input("Ingrese el nombre de usuario: ").lower() 
-            password = input("Ingrese la contraseña: ").lower()
+            # agrego el strip recomendado para eliminar espacios en blanco al inicio y al final
+            nombre = input("Ingrese el nombre de usuario: ").lower().strip()
+            password = input("Ingrese la contraseña: ").lower().strip()
+            # Chequeo si el nombre de usuario y la contraseña no están vacíos
+            if not nombre or not password:
+                print("ERROR: El nombre de usuario y/o la contraseña no pueden estar vacíos.")
+                continue
             if registrar_usuario(nombre, password):
                 print(f"Usuario {nombre} registrado exitosamente.")
             else:
@@ -57,8 +62,8 @@ def main():
         elif opcion == '2':
             # Capturo el nombre y la contraseña del usuario y lo convierto 
             # a minusculas para evitar problema de case-sensitivity
-            nombre = input("Ingrese el nombre de usuario: ").lower()
-            password = input("Ingrese la contraseña: ").lower()
+            nombre = input("Ingrese el nombre de usuario: ").lower().strip()
+            password = input("Ingrese la contraseña: ").lower().strip()
             if login(nombre, password):
                 print(f"\nUsuario {nombre} ha iniciado sesión.")
             else:
