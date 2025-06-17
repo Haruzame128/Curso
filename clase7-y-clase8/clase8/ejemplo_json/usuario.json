@@ -1,0 +1,14 @@
+{
+    "id": 101,
+    "nombre": "Luis Fern\u00e1ndez",
+    "activo": true,
+    "roles": [
+        "admin",
+        "editor"
+    ],
+    "hobbies": [
+        "leer",
+        "viajar",
+        "programar"
+    ]
+}

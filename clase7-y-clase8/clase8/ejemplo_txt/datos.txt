@@ -1,0 +1,9 @@
+Nombre: Luis Fern�ndez
+Edad: 30
+Hobbies:
+- Leer
+- Viajar
+- Programar
+
+Profesi�n: Ingeniero
+Ciudad: Buenos Aires

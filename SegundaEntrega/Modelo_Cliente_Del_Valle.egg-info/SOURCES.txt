@@ -1,0 +1,7 @@
+setup.py
+Clases/Cliente.py
+Clases/Persona.py
+Modelo_Cliente_Del_Valle.egg-info/PKG-INFO
+Modelo_Cliente_Del_Valle.egg-info/SOURCES.txt
+Modelo_Cliente_Del_Valle.egg-info/dependency_links.txt
+Modelo_Cliente_Del_Valle.egg-info/top_level.txt

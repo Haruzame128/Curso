@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: Modelo_Cliente_Del_Valle
+Version: 0.1
+Summary: Segunda entrega del curso de Python
+Author: Eduardo del Valle
+Author-email: eduardodelvalle_90@hotmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
